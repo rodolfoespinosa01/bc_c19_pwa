@@ -4,12 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start:dev": "",
-    "start": "",
-    "server": "",
-    "build": "",
-    "install": "",
-    "client": ""
+    "start:dev": "cd ./client && npm run dev",
+    "start": "npm run build && cd ./server node server.js",
+    "server": "cd ./server && npm run server",
+    "build": "cd ./client && npm run build",
+    "install": "concurrently \"cd ./client && npm i\" \"cd ./server && npm i\""
   },
   "keywords": [],
   "author": "",
@@ -19,7 +18,7 @@
     "if-env": "^1.0.4"
   },
   "devDependencies": {
-    "concurrently": "^5.2.0",
+    "concurrently": "^5.3.0",
     "nodemon": "^2.0.4"
   }
 }
