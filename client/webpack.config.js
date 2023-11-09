@@ -22,6 +22,8 @@ if (is_prod) {
           "A text editor PWA (progressive web app) that can work both online and offline",
         background_color: "#ffffff",
         theme_color: "#000",
+        publicPath: "/",
+        inject: true,
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
