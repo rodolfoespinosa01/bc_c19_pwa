@@ -22,7 +22,7 @@ if (is_prod) {
           "A text editor PWA (progressive web app) that can work both online and offline",
         background_color: "#ffffff",
         theme_color: "#000",
-        publicPath: "/",
+        publicPath: "./",
         inject: true,
         icons: [
           {
@@ -31,13 +31,16 @@ if (is_prod) {
           },
         ],
       }),
-      new InjectManifest({
-        swSrc: "./src-sw.js",
-        swDest: "service-worker.js",
-      }),
     ]
   );
 }
+
+plugins.push(
+  new InjectManifest({
+    swSrc: "./src-sw.js",
+    swDest: "service-worker.js",
+  })
+);
 
 module.exports = () => {
   return {
@@ -53,6 +56,16 @@ module.exports = () => {
     plugins: plugins,
     module: {
       rules: [
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"],
+            },
+          },
+        },
         {
           test: /\.css$/,
           use: ["style-loader", "css-loader"],
