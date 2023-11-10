@@ -5,10 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "cd ./client && npm run dev",
-    "start": "npm run build && cd ./server node server.js",
-    "server": "cd ./server && npm run server",
+    "start": "npm run build && node ./server/server.js",
     "build": "cd ./client && npm run build",
-    "install": "concurrently \"cd ./client && npm i\" \"cd ./server && npm i\""
+    "install": "cd ./client && npm install && cd ../server && npm install"
   },
   "keywords": [],
   "author": "",
