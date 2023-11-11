@@ -36,7 +36,7 @@ npm start
 
 ## Usage
 
-![Alt text](public/Assets/module14_preview.png)
+![Alt text](client/src/images/preInstall.png) ![Alt text](client/src/images/install.png) ![Alt text](client/src/images/service-worker.png) ![Alt text](client/src/images/manifest.png) ![Alt text](client/src/images/indexDB.png)
 
 ## License
 
