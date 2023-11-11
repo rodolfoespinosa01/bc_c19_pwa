@@ -2,19 +2,19 @@
 
 ## Description
 
-The objective of this homework assigment was to use Mongoose and MongoDB with Insomnia. API routes need to be created for CRUD.
+The goal of this project is to build a text editor that runs in the browser and can be downloaded as a PWA (progressive web app). The application should also function offline. The database that is being used is a package that can be downloaded called 'IDB' or IndexedDB database - the site will be deployed on Heroku upon deployment
 
 > ### What was your motivation?
 >
-> Learning how to create a PWA app
+> Learning how to create a PWA app with the use of IndexDB. This is to see the ability of getting an app to work even if it is offline.
 
 > ### Why did you build this project?
 >
-> To create a PWA app by using provided started code
+> The point of doing this project is to be able to create apps that even work offline for future clients.
 
 > ### What problem does it solve?
 >
-> It allows the user to continue using their web app even during off line
+> It allows the user to continue using their web app even during offline
 
 > ### What did you learn?
 >
@@ -30,7 +30,9 @@ The objective of this homework assigment was to use Mongoose and MongoDB with In
 
 ## Installation
 
-## Express and Mongoose NPM Packages
+npm install
+npm run build
+npm start
 
 ## Usage
 

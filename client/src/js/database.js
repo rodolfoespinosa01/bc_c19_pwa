@@ -15,6 +15,7 @@ const initdb = async () =>
     },
   });
 
+// Add data to the jate_store object
 export const putDb = async (content) => {
   const db = await openDB("jateDB", 1);
   const tx = db.transaction("jate_store", "readwrite");
@@ -23,6 +24,7 @@ export const putDb = async (content) => {
   console.log("Content has been added to the database", result.value);
 };
 
+// receive data from the jate_store object
 export const getDb = async () => {
   const db = await openDB("jateDB", 1);
   const tx = db.transaction("jate_store", "readonly");
