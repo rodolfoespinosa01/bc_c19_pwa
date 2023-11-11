@@ -3,7 +3,10 @@ const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
 const { InjectManifest } = require("workbox-webpack-plugin");
 
-const is_prod = (process.env.NODE_ENV || "").trim() === "production";
+// check if process.env.NODE_ENV exist first
+// const is_prod = process.env.NODE_ENV && process.env.NODE_ENV.trim() === "production";
+
+const is_prod = process.env.NODE_ENV.trim() === "production";
 
 const plugins = [
   new HtmlWebpackPlugin({
@@ -22,7 +25,7 @@ if (is_prod) {
           "A text editor PWA (progressive web app) that can work both online and offline",
         background_color: "#ffffff",
         theme_color: "#000",
-        publicPath: "./",
+        publicPath: "/",
         inject: true,
         icons: [
           {

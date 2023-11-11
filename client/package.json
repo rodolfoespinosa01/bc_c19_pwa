@@ -1,8 +1,8 @@
 {
   "name": "JATE",
   "scripts": {
-    "dev": "set NODE_ENV=development && webpack-dev-server",
-    "build": "set NODE_ENV=production && webpack",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack",
     "start": "webpack --watchAll"
   },
   "author": "2U",
@@ -14,6 +14,7 @@
     "@babel/preset-env": "^7.15.0",
     "@babel/runtime": "^7.15.3",
     "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "http-server": "^0.11.1",
