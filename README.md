@@ -1,4 +1,4 @@
-# PWA[License: MIT)](https://img.shields.io/badge/License-MIT-yellow.svg)
+# PWA
 
 ## Description
 
@@ -36,13 +36,22 @@ npm start
 
 ## Usage
 
-![Alt text](client/src/images/preInstall.png) ![Alt text](client/src/images/install.png) ![Alt text](client/src/images/service-worker.png) ![Alt text](client/src/images/manifest.png) ![Alt text](client/src/images/indexDB.png)
+![Pre Install](client/src/images/preInstall.png)
+_Description: This image shows the pre-installation process._
+
+![Install](client/src/images/install.png)
+_Description: This image illustrates the installation process._
+
+![Service Worker](client/src/images/service-worker.png)
+_Description: This image represents the Service Worker functionality._
+
+![Manifest](client/src/images/manifest.png)
+_Description: This image displays the manifest file._
+
+![IndexedDB](client/src/images/indexDB.png)
+_Description: This image showcases IndexedDB usage._
 
 ## License
-
-MIT License Info.
-
-## Badges
 
 ![License: MIT)](https://img.shields.io/badge/License-MIT-yellow.svg)
 
